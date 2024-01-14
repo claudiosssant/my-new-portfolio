@@ -2,8 +2,11 @@ import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarSeparator, Me
 
 const MenuHeader = () => {
   return ( 
-    <div>
+    <div className="">
       <Menubar>
+      <MenubarMenu>
+          <MenubarTrigger className="cursor-pointer">Home</MenubarTrigger>
+        </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger className="cursor-pointer">About</MenubarTrigger>
           <MenubarContent>

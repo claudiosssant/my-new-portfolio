@@ -22,7 +22,7 @@ import MenuHeader from "./menu-header";
 
 const Header = () => {
   return (
-    <Card className="flex items-center justify-between bg-slate-50 p-[1.875rem]">
+    <Card className="flex items-center justify-center gap-1 bg-white/80 shadow-none border-0 p-[1.875rem] fixed w-full">
       <Link href="/">
         <Avatar>
           <AvatarImage src="https://avatars.githubusercontent.com/u/122230401?s=96&v=4" />

@@ -3,7 +3,7 @@ import Header from "@/components/ui/header";
 
 const Home = () => {
   return ( 
-    <div>
+    <div className="">
       <Header />
       <div className="flex-1 h-screen">
 
