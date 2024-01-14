@@ -1,3 +1,5 @@
+"use client"
+
 import { Envelope, GithubLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react"
 
 
@@ -16,4 +18,4 @@ const Footer = () => {
     </div>
   )};
 
-  export default Footer ;
+  export default Footer;
