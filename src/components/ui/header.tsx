@@ -22,7 +22,7 @@ import MenuHeader from "./menu-header";
 
 const Header = () => {
   return (
-    <Card className="flex items-center justify-between md:justify-center gap-1 bg-white/90 shadow-none border-0 p-[1.875rem] fixed w-full">
+    <Card className="flex items-center justify-between md:justify-center gap-1 bg-white/10 backdrop-blur-lg shadow-none border-0 p-[1.875rem] fixed w-full">
       <Link href="/">
         <Avatar>
           <AvatarImage src="https://avatars.githubusercontent.com/u/122230401?s=96&v=4" />
@@ -45,7 +45,7 @@ const Header = () => {
               Menu
             </SheetHeader>
 
-            <div className="mt-4 flex flex-col gap-3">
+            <div className="mt-4 flex flex-col gap-4">
               <Button
                 variant="outline"
                 className=" w-full justify-center gap-2 font-bold"
@@ -61,24 +61,22 @@ const Header = () => {
                 About
               </Button>
 
-              <SheetClose asChild>
-                <Link href={"/"}>
-                  <Button
-                    variant="outline"
-                    className=" w-full justify-center gap-2 font-bold"
-                  >
-                    <ProjectorScreen />
-                    Projects
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className=" w-full justify-center gap-2 font-bold"
-                  >
-                    <Phone />
-                    Contacts
-                  </Button>
-                </Link>
-              </SheetClose>
+              <Link href={"/"}>
+                <Button
+                  variant="outline"
+                  className=" w-full justify-center gap-2 font-bold"
+                >
+                  <ProjectorScreen />
+                  Projects
+                </Button>
+              </Link>
+              <Button
+                variant="outline"
+                className=" w-full justify-center gap-2 font-bold"
+              >
+                <Phone />
+                Contacts
+              </Button>
             </div>
           </SheetContent>
         </Sheet>
