@@ -1,37 +1,39 @@
-import NextjsIcon from "../../../../public/icons8-nextjs-144.png";
-import NodejsIcon from "../../../../public/icons8-nodejs-128.png";
-import TsIcon from "../../../../public/icons8-texto-datilografado-150.png";
-import PostgreIcon from "../../../../public/icons8-postgreesql-150.png";
-import FigmaIcon from "../../../../public/icons8-figma-150.png";
-import ReactIcon from "../../../../public/icons8-react-96 (1).png";
-import TailwindIcon from "../../../../public/icons8-tailwind-css-96 (1).png";
-import GitIcon from "../../../../public/icons8-git-150.png";
-import RNIcon from "../../../../public/icons8-nextjs-144.png";
+import NextjsIcon from "../../../../public/nextjs-icon.svg";
+import NodejsIcon from "../../../../public/node-icon.svg";
+import TsIcon from "../../../../public/typescript-icon.svg";
+import PostgreIcon from "../../../../public/postgre-icon.svg";
+import FigmaIcon from "../../../../public/figma-icon.svg";
+import ReactIcon from "../../../../public/react-icon.svg";
+import TailwindIcon from "../../../../public/tailwind-icon.svg";
+import GitIcon from "../../../../public/git-icon.svg";
+import JsIcon from "../../../../public/javascript-icon.svg";
 
 import Image from "next/image";
 
 const SkillCarousel = () => {
   return (
     <div className="flex overflow-hidden space-x-16 w-full">
-      <div className="flex space-x-16 animate-loop-scroll">
-        <Image width={150} height={150} src={NextjsIcon} alt="icon" />
-        <Image width={150} height={150} src={TsIcon} alt="icon" />
-        <Image width={150} height={150} src={ReactIcon} alt="icon" />
-        <Image width={150} height={150} src={FigmaIcon} alt="icon" />
-        <Image width={150} height={150} src={TailwindIcon} alt="icon" />
-        <Image width={150} height={150} src={PostgreIcon} alt="icon" />
-        <Image width={150} height={150} src={GitIcon} alt="icon" />
-        <Image width={150} height={150} src={NodejsIcon} alt="icon" />
+      <div className="flex gap-3 space-x-16 animate-loop-scroll">
+        <Image className="max-w-none" src={NextjsIcon} alt="icon" />
+        <Image className="max-w-none" src={TsIcon} alt="icon" />
+        <Image className="max-w-none" src={ReactIcon} alt="icon" />
+        <Image className="max-w-none" src={FigmaIcon} alt="icon" />
+        <Image className="max-w-none" src={TailwindIcon} alt="icon" />
+        <Image className="max-w-none" src={PostgreIcon} alt="icon" />
+        <Image className="max-w-none" src={GitIcon} alt="icon" />
+        <Image className="max-w-none" src={NodejsIcon} alt="icon" />
+        <Image className="max-w-none" src={JsIcon} alt="icon" />
       </div>
-      <div className="flex space-x-16 animate-loop-scroll" aria-hidden="true">
-        <Image width={150} height={150} src={NextjsIcon} alt="icon" />
-        <Image width={150} height={150} src={TsIcon} alt="icon" />
-        <Image width={150} height={150} src={ReactIcon} alt="icon" />
-        <Image width={150} height={150} src={FigmaIcon} alt="icon" />
-        <Image width={150} height={150} src={TailwindIcon} alt="icon" />
-        <Image width={150} height={150} src={PostgreIcon} alt="icon" />
-        <Image width={150} height={150} src={GitIcon} alt="icon" />
-        <Image width={150} height={150} src={NodejsIcon} alt="icon" />
+      <div className="flex space-x-16 gap-3 animate-loop-scroll" aria-hidden="true">
+        <Image className="max-w-none" src={NextjsIcon} alt="icon" />
+        <Image className="max-w-none" src={TsIcon} alt="icon" />
+        <Image className="max-w-none" src={ReactIcon} alt="icon" />
+        <Image className="max-w-none" src={FigmaIcon} alt="icon" />
+        <Image className="max-w-none" src={TailwindIcon} alt="icon" />
+        <Image className="max-w-none" src={PostgreIcon} alt="icon" />
+        <Image className="max-w-none" src={GitIcon} alt="icon" />
+        <Image className="max-w-none" src={NodejsIcon} alt="icon" />
+        <Image className="max-w-none" src={JsIcon} alt="icon" />
       </div>
     </div>
   );
