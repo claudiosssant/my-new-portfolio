@@ -7,7 +7,6 @@ import ReactIcon from "../../../../public/react-icon.svg";
 import TailwindIcon from "../../../../public/tailwind-icon.svg";
 import GitIcon from "../../../../public/git-icon.svg";
 import JsIcon from "../../../../public/javascript-icon.svg";
-
 import Image from "next/image";
 
 const SkillCarousel = () => {

@@ -4,7 +4,7 @@ const SkillText = () => {
       <div className="font-extrabold text-4xl">
         <h1>Minhas tecnologias</h1>
       </div>
-      <div className="font-bold text-lg text-teal-300">
+      <div className="font-bold text-lg text-orange-600">
         <p>Tecnologias mais utilizadas no meu processo de desenvolvimento!</p>
       </div>
     </div>
