@@ -72,7 +72,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       animation: {
-        "loop-scroll": "loop-scroll 40s linear infinite"
+        "loop-scroll": "loop-scroll 30s linear infinite"
       },
       keyframes: {
         "loop-scroll": {
