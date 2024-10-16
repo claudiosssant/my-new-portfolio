@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import imageProject from "../../../../public/perfil-alvo.png"
 import { GithubLogo, LinkBreak } from "@phosphor-icons/react";
 import Link from "next/link";
 
