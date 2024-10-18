@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const ProjectCards = () => {
   return ( 
-    <div className="">
+    <div className="hover:scale-105 transition-transform cursor-pointer">
       <div className="bg-gray-100 px-44 py-20 rounded-t-xl">
         <p>Imagem do projeto</p>
       </div>
