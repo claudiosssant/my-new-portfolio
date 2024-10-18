@@ -1,6 +1,6 @@
 const ProjectsHeader = () => {
   return ( 
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full animate-fade-down animate-once animate-duration-[900ms]">
       <div className="font-extrabold text-4xl">
         <h1>Meus Projetos</h1>
       </div>
