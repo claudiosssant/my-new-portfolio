@@ -1,8 +1,12 @@
+import AboutContent from "./components/about-content";
+import AboutImage from "./components/about-image";
+
 const About = () => {
   return ( 
-    <div>
-      
-    </div>
+    <main className="flex justify-between h-screen">
+      <AboutImage />
+      <AboutContent />
+    </main>
    );
 }
  
