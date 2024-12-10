@@ -4,7 +4,7 @@ const AboutContent = () => {
       <header className="px-12">
         <h2 className="text-4xl">Olá, sou o Cláudio Santos</h2>
       </header>
-      <main className="px-12">
+      <main className="px-12 w-2/3">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
         accusantium dolor culpa aut. Quo doloribus fugiat corrupti laboriosam
         facilis explicabo dignissimos voluptate iure.
