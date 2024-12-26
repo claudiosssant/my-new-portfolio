@@ -4,7 +4,7 @@ import aboutImg from "../../../../public/craudin.jpeg"
 
 const AboutImage = () => {
   return ( 
-   <motion.div initial={{ scale: 0 }} animate={{ scale: 1.2 }} className="border flex border-red-500 p-12">
+   <motion.div initial={{ scale: 0 }} animate={{ scale: 1.2 }} className="p-12">
     <div>
       <Image width={520} height={500} src={aboutImg} alt="foto de cláudio" />
     </div>
