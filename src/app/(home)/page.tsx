@@ -7,6 +7,7 @@ import { Chakra_Petch } from "next/font/google";
 import Skills from "../skills/page";
 import Projects from "../projects/page";
 import About from "../about/page";
+import Contacts from "../contact/page";
 
 const chakra = Chakra_Petch({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ const Home = () => {
       <About />
       <Skills />
       <Projects />
+      <Contacts />
       <Footer />
     </div>
   );
