@@ -3,7 +3,7 @@ import ProjectCards from "./components/projects-card";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col pt-28">
+    <div className="flex flex-col">
       <div className="h-1/4 pb-24">
         <ProjectsHeader />
       </div>
