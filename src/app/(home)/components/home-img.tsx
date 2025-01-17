@@ -7,11 +7,14 @@ const HomeImg = () => {
   return (
     <motion.div
       className="flex justify-center items-center h-full w-full md:w-1/2"
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 1, scale: 1 }}
+      animate={{ opacity: 1, scale: 1, y: [0, -20, 0] }}
       transition={{
-        duration: 2,
-        scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+        duration: 4,
+        repeat: Infinity,
+        repeatType: "loop", 
+        ease: "easeInOut", 
+        scale: { type: "spring", duration: 0.4, bounce: 0.5 },
       }}
     >
       <Image

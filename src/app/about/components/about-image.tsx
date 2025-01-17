@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import aboutImg from "../../../../public/IMG_4109.jpg"
+import aboutImg from "../../../../public/about-img2.jpg"
 
 const AboutImage = () => {
   return ( 

@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div className={chakra.className}>
       <Header />
-      <Drag />
+      <Drag /> 
       <div className="h-screen flex justify center">
         <HomeText />
         <HomeImg />
