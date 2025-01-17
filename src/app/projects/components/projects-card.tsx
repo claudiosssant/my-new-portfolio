@@ -5,22 +5,24 @@ import { useState } from "react";
 import Link from "next/link";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
-const ProjectCards = () => {
+
+interface Project {
+  name: string;
+  techStack: string;
+  description: string;
+  githubLink: string;
+  liveDemoLink: string;
+  imageSrc: string;
+}
+
+const ProjectCard = ({ project }: { project: Project }) => {
   const [openModal, setOpenModal] = useState(false);
 
   function handleShowModal(open: boolean) {
     setOpenModal(open);
   }
-
-  const project = {
-    name: "Nome do projeto",
-    techStack: "Node - Express - Postgres - Kafka - Redis",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s.",
-    githubLink: "https://github.com",
-    liveDemoLink: "https://example.com",
-  };
 
   return (
     <>
@@ -28,8 +30,8 @@ const ProjectCards = () => {
         className="hover:scale-105 transition-transform cursor-pointer shadow-lg rounded-lg"
         onClick={() => handleShowModal(true)}
       >
-        <div className="bg-gray-100 px-44 py-20 rounded-t-xl flex items-center justify-center">
-          <p>Imagem do projeto</p>
+        <div className="">
+          <Image src={project.imageSrc} alt={project.name} width={700} height={300} />
         </div>
         <article className="px-4 py-2">
           <header className="flex justify-between items-center">
@@ -50,7 +52,7 @@ const ProjectCards = () => {
         </article>
       </div>
 
-      {/* Modal */}
+
       <Dialog open={openModal} onOpenChange={handleShowModal}>
         <DialogContent>
           <DialogHeader>
@@ -80,6 +82,51 @@ const ProjectCards = () => {
         </DialogContent>
       </Dialog>
     </>
+  );
+};
+
+const ProjectCards = () => {
+  const projects: Project[] = [
+    {
+      name: "IndaHouse Pet Grooming",
+      techStack: "NextJs - ReactJs - TailwindCSS - Nodejs - Vercel",
+      description: "Landing Page responsiva para empresa de Pet Grooming de Nova York (EUA).",
+      githubLink: "https://github.com",
+      liveDemoLink: "https://example.com",
+      imageSrc: "/indahouse-img.svg",
+    },
+    {
+      name: "Wolp Barber",
+      techStack: "Nuxtjs - Vuejs - Javascript - TailwindCSS",
+      description: "Landing Page profissional para barbearia localizada em Recife, Pernambuco.",
+      githubLink: "https://github.com",
+      liveDemoLink: "https://example.com",
+      imageSrc: "/wolpbarber.svg",
+    },
+    {
+      name: "Lista de Produtos",
+      techStack: "Node - Express - Reactjs - TailwindCSS - ShadcnUI",
+      description: "Repositório de estudo em criação de API, realização de CRUD e exibição no Front-End.",
+      githubLink: "https://github.com",
+      liveDemoLink: "https://example.com",
+      imageSrc: "/productslist.svg",
+    },
+    {
+      name: "LA Chargers 60th",
+      techStack: "HTML - CSS - Javascript - Vercel",
+      description: "Landing Page responsiva de comemoração dos 60 anos do time Los Angeles Chargers.",
+      githubLink: "https://github.com",
+      liveDemoLink: "https://example.com",
+      imageSrc: "/lachargers.svg", 
+    },
+  ];
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {projects.map((project, index) => (
+        <ProjectCard key={index} project={project} />
+      ))}
+    </div>
   );
 };
 

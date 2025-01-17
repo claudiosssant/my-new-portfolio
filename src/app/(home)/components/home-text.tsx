@@ -24,7 +24,6 @@ const HomeText = () => {
             delaySpeed={1500}
           />
         </h1>
-        <span className="font-extrabold text-6xl text-orange-600">.</span>
       </div>
       <div className="flex gap-1 a">
         <h4 className="text-orange-600 font-bold text-2xl">
