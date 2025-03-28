@@ -3,14 +3,17 @@ import AboutImage from "./components/about-image";
 
 const About = () => {
   return (
-    <main className="flex flex-col lg:flex-row justify-between items-center lg:items-stretch h-screen p-4 lg:p-8">
-      <section className="w-full lg:w-1/2 flex justify-center items-center lg:pr-4">
-        <AboutImage />
-      </section>
-
-      <section className="w-full lg:w-1/2 flex items-center justify-center lg:pl-4">
-        <AboutContent />
-      </section>
+    <main className="min-h-screen bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+          <section className="w-full lg:w-1/2">
+            <AboutImage />
+          </section>
+          <section className="w-full lg:w-1/2">
+            <AboutContent />
+          </section>
+        </div>
+      </div>
     </main>
   );
 };

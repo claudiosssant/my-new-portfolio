@@ -71,7 +71,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
               <Link href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="flex items-center space-x-2">
                   <LinkBreak size={20} />
-                  <span>Live Demo</span>
+                  <span>Link</span>
                 </Button>
               </Link>
             </div>
@@ -91,8 +91,8 @@ const ProjectCards = () => {
       name: "IndaHouse Pet Grooming",
       techStack: "NextJs - ReactJs - TailwindCSS - Nodejs - Vercel",
       description: "Landing Page responsiva para empresa de Pet Grooming de Nova York (EUA).",
-      githubLink: "https://github.com",
-      liveDemoLink: "https://example.com",
+      githubLink: "https://github.com/Blacktech-Company/indahouse",
+      liveDemoLink: "https://indahouse.vercel.app/",
       imageSrc: "/indahouse-img.svg",
     },
     {
@@ -108,7 +108,7 @@ const ProjectCards = () => {
       techStack: "Node - Express - Reactjs - TailwindCSS - ShadcnUI",
       description: "Repositório de estudo em criação de API, realização de CRUD e exibição no Front-End.",
       githubLink: "https://github.com",
-      liveDemoLink: "https://example.com",
+      liveDemoLink: "https://products-frontend-sepia.vercel.app/",
       imageSrc: "/productslist.svg",
     },
     {
@@ -116,7 +116,7 @@ const ProjectCards = () => {
       techStack: "HTML - CSS - Javascript - Vercel",
       description: "Landing Page responsiva de comemoração dos 60 anos do time Los Angeles Chargers.",
       githubLink: "https://github.com",
-      liveDemoLink: "https://example.com",
+      liveDemoLink: "https://claudiosssant.github.io/la-chargers-60/",
       imageSrc: "/lachargers.svg", 
     },
   ];
